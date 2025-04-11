@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulador de Cápsulas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Formulador de Cápsulas</h2>
+
+    <div id="ativos">
+      <div class="ativo">
+        <input type="text" placeholder="Nome do ativo" class="nome">
+        <input type="number" placeholder="Dose desejada (mg)" class="dose">
+        <input type="number" placeholder="Teor (%) - opcional" class="teor">
+        <button class="remover" onclick="removerAtivo(this)">–</button>
+      </div>
+    </div>
+
+    <div class="botoes">
+      <button onclick="adicionarAtivo()">+ Ativo</button>
+      <button onclick="calcular()">Calcular</button>
+      <button onclick="limparTudo()" class="reset">Limpar Tudo</button>
+    </div>
+
+    <div class="resultado" id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
